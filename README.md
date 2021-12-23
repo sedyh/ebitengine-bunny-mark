@@ -35,6 +35,8 @@ Controls:
 
 ### Perfomance
 
-| Software     | Hardware            | Resolution | Maximum number of objects at stable 60 fps |
-|--------------|---------------------|------------|--------------------------------------------|
-| Native Linux | R5 4600, RX 5700 XT | 800x600    | 33800                                      |
+| Software           | Hardware            | Ebiten Version | Resolution | Maximum number of objects at stable 60 fps |
+|--------------------|---------------------|----------------|------------|--------------------------------------------|
+| Native Linux       | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 33800                                      |
+| Wasm Linux Chrome  | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 8150                                       |
+| Wasm Linux Firefox | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 6200                                       |
