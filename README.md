@@ -50,3 +50,8 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 | Wasm, Windows 10 Pro 19.0, Chrome 96.0       | i7 3770, GTX 1050 TI | 2.2.3          | 800x600    | 5700                                       |
 | Wasm, Windows 10 Pro 19.0, Firefox 95.0      | i7 3770, GTX 1050 TI | 2.2.3          | 800x600    | 4700                                       |
 | Wasm, iPadOS 14.6, Safari 605.1              | A10X                 | 2.2.3          | 800x600    | 3200                                       |
+
+### Contributing
+
+To add, remove, or change things on the perfomance table: send a message in [this](https://github.com/sedyh/ebiten-bunny-mark/issues/2) issue.
+To add new functionality or fix something: submit a pull request.
