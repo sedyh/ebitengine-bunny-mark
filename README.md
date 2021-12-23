@@ -19,10 +19,10 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 ### Usage
 
 To run benchmark please do the following command.
-Please remember that @lastest only works since Go 17.
+Please remember that @master only works since Go 17.
 
 ```
-go run github.com/sedyh/ebiten-bunny-mark@latest
+go run github.com/sedyh/ebiten-bunny-mark@master
 ```
 
 Instructions:
