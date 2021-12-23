@@ -12,6 +12,7 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
+	ebiten.SetWindowSize(800, 600)
 	ebiten.SetFPSMode(ebiten.FPSModeVsyncOffMaximum)
 	ebiten.SetWindowResizable(true)
 	if err := ebiten.RunGame(bench.NewGame(100, false)); err != nil {

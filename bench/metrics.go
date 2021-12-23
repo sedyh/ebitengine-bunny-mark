@@ -2,6 +2,7 @@ package bench
 
 import (
 	"fmt"
+	"image"
 	"image/color"
 	"time"
 
@@ -14,6 +15,7 @@ import (
 
 type Metrics struct {
 	Ticker   *time.Ticker
+	Bounds   *image.Rectangle
 	Colorful *bool
 	Amount   *int
 	Gpu      string
@@ -22,13 +24,14 @@ type Metrics struct {
 	Objects  *Plot
 }
 
-func NewMetrics(rate time.Duration, colorful *bool, amount *int) *Metrics {
+func NewMetrics(rate time.Duration, resolution *image.Rectangle, colorful *bool, amount *int) *Metrics {
 	return &Metrics{
 		Ticker:   time.NewTicker(rate),
 		Gpu:      GpuInfo(),
 		Tps:      NewPlot(20, 60),
 		Fps:      NewPlot(20, 60),
 		Objects:  NewPlot(20, 60000),
+		Bounds:   resolution,
 		Colorful: colorful,
 		Amount:   amount,
 	}
@@ -46,8 +49,10 @@ func (m *Metrics) Update(objects float64) {
 
 func (m *Metrics) Draw(screen *ebiten.Image) {
 	str := fmt.Sprintf(
-		"GPU: %s\nTPS: %.2f, FPS: %.2f, Objects: %.f\nColorful: %t, Amount: %d",
-		m.Gpu, m.Tps.Last(), m.Fps.Last(), m.Objects.Last(), *m.Colorful, *m.Amount,
+		"GPU: %s\nTPS: %.2f, FPS: %.2f, Objects: %.f\nColorful: %t, Amount: %d\nResolution: %dx%d",
+		m.Gpu, m.Tps.Last(), m.Fps.Last(), m.Objects.Last(),
+		*m.Colorful, *m.Amount,
+		m.Bounds.Dx(), m.Bounds.Dy(),
 	)
 
 	rect := text.BoundString(basicfont.Face7x13, str)

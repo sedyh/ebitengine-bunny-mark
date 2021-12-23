@@ -11,13 +11,13 @@ import (
 )
 
 type Game struct {
-	Sprite   *ebiten.Image   // Image for bunnies
-	Bounds   image.Rectangle // Physical window size
-	Bunnies  []*Bunny        // List of bunnies
-	Amount   *int            // How much to add
-	Metrics  *Metrics        // Current TPS, FPS, object count and plots
-	Colorful *bool           // Add some serious load
-	Gpu      string          // Current gpu
+	Sprite   *ebiten.Image    // Image for bunnies
+	Bounds   *image.Rectangle // Physical window size
+	Bunnies  []*Bunny         // List of bunnies
+	Amount   *int             // How much to add
+	Metrics  *Metrics         // Current TPS, FPS, object count and plots
+	Colorful *bool            // Add some serious load
+	Gpu      string           // Current gpu
 }
 
 func NewGame(amount int, colorful bool) *Game {
@@ -25,8 +25,10 @@ func NewGame(amount int, colorful bool) *Game {
 		Sprite:   LoadSprite(),
 		Amount:   &amount,
 		Colorful: &colorful,
-		Metrics:  NewMetrics(500*time.Millisecond, &colorful, &amount),
+		Bounds:   &image.Rectangle{},
 	}
+
+	g.Metrics = NewMetrics(500*time.Millisecond, g.Bounds, g.Colorful, g.Amount)
 	g.AddBunnies()
 
 	return g
@@ -35,6 +37,10 @@ func NewGame(amount int, colorful bool) *Game {
 func (g *Game) Update() error {
 	if inpututil.IsMouseButtonJustPressed(ebiten.MouseButtonLeft) {
 		g.AddBunnies()
+	}
+
+	if ids := ebiten.AppendTouchIDs(nil); len(ids) > 0 {
+		g.AddBunnies() // not accurate, cause no input manager for this
 	}
 
 	if _, offset := ebiten.Wheel(); offset != 0 {
@@ -46,7 +52,7 @@ func (g *Game) Update() error {
 	}
 
 	for _, b := range g.Bunnies {
-		b.Update(g.Bounds)
+		b.Update(*g.Bounds)
 	}
 
 	g.Metrics.Update(float64(len(g.Bunnies)))
@@ -65,7 +71,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 }
 
 func (g *Game) Layout(width, height int) (int, int) {
-	g.Bounds = image.Rect(0, 0, width, height)
+	g.Bounds.Max = image.Point{X: width, Y: height}
 
 	return width, height
 }
