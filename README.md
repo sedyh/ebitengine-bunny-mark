@@ -36,8 +36,11 @@ Controls:
 
 ### Perfomance
 
-| Software           | Hardware            | Ebiten Version | Resolution | Maximum number of objects at stable 60 fps |
-|--------------------|---------------------|----------------|------------|--------------------------------------------|
-| Native Linux       | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 33800                                      |
-| Wasm Linux Chrome  | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 8150                                       |
-| Wasm Linux Firefox | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 6200                                       |
+| Software                                     | Hardware            | Ebiten Version | Resolution | Maximum number of objects at stable 60 fps |
+|----------------------------------------------|---------------------|----------------|------------|--------------------------------------------|
+| Native, MacOS Big Sur 11.1                   | M1 2020             | 2.2.3          | 800x600    | 65400                                      |
+| Native, Linux Mint 20.2 Cinnamon             | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 33800                                      |
+| Wasm, Linux Mint 20.2 Cinnamon, Chrome 96.0  | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 8150                                       |
+| Wasm, MacOS Big Sur 11.1, Safari 14.0        | M1 2020             | 2.2.3          | 800x600    | 8100                                       |
+| Wasm, Linux Mint 20.2 Cinnamon, Firefox 95.0 | R5 4600, RX 5700 XT | 2.2.3          | 800x600    | 6200                                       |
+| Wasm, iPadOS 14.6, Safari 605.1              | A10X                | 2.2.3          | 800x600    | 3200                                       |
