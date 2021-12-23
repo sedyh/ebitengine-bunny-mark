@@ -10,8 +10,11 @@ func GpuInfo() (gpu string) {
 	if err != nil {
 		return
 	}
-	if len(info.GraphicsCards) == 0 {
-		return
+
+	for _, gc := range info.GraphicsCards {
+		if gc.DeviceInfo != nil {
+			return gc.DeviceInfo.Product.Name
+		}
 	}
-	return info.GraphicsCards[0].DeviceInfo.Product.Name
+	return
 }
