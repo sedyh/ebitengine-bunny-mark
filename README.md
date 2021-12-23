@@ -11,6 +11,7 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 - [Running](#running)
 - [Instructions](#instructions)
 - [Perfomance](#perfomance)
+- [Contributing](#contributing)
 
 ### Preview
 
