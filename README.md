@@ -54,4 +54,5 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 ### Contributing
 
 To add, remove, or change things on the perfomance table: send a message in [this](https://github.com/sedyh/ebiten-bunny-mark/issues/2) issue.
+
 To add new functionality or fix something: submit a pull request.
