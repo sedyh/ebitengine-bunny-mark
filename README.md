@@ -8,7 +8,8 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 ### Contents
 
 - [Preview](#preview)
-- [Usage](#usage)
+- [Running](#running)
+- [Instructions](#instructions)
 - [Perfomance](#perfomance)
 
 ### Preview
@@ -16,25 +17,24 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 <img src="https://user-images.githubusercontent.com/19890545/147268942-4c939aee-1c30-42d8-b792-39021fd62568.gif">
 <img src="https://user-images.githubusercontent.com/19890545/147268946-e6ff7293-9715-472c-aba1-5dd04690d79c.gif">
 
-### Usage
+### Running
 
-To run benchmark please do the following command.
-Please remember that @master only works since Go 17.
+To run the benchmark from ready binary, visit the [latest releases](https://github.com/sedyh/ebiten-bunny-mark/releases) page.
+
+To run the benchmark from sources do the following command:
 
 ```
 go run github.com/sedyh/ebiten-bunny-mark@master
 ```
+<sub>Please remember that @master only works since Go 17.</sub>
 
-Instructions:
+### Instructions
 
 - Close all other programs for more accurate results.
-- Press the left mouse button to add some amount of gophers 
-- Adjust the number of gophers that appear at a time with the mouse wheel
+- Press the left mouse button to add some amount of gophers.
+- Adjust the number of gophers that appear at a time with the mouse wheel.
 - Increase the number of gophers until the FPS starts dropping below 60 to find out your result.
 - To understand that the drop in performance is not a one-off - use the graphs on the right, they show TPS, FPS and the number of objects over a certain time.
-
-Optional:
-
 - Press the right mouse button to color the gophers, this will greatly increase the load, but keep in mind that all measurements were taken without coloring.
 
 ### Perfomance
