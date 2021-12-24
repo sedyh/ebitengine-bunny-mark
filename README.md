@@ -35,7 +35,7 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 - Press the left mouse button to add some amount of gophers.
 - Adjust the number of gophers that appear at a time with the mouse wheel.
 - Increase the number of gophers until the FPS starts dropping below 60 to find out your result.
-- To understand that the drop in performance is not a one-off - use the graphs on the right, they show TPS, FPS and the number of objects over a certain time.
+- To understand that the drop in performance is not a one-off - use the graphs on the left, they show TPS, FPS and the number of objects over a certain time.
 - Press the right mouse button to color the gophers, this will greatly increase the load, but keep in mind that all measurements were taken without coloring.
 
 ### Perfomance
