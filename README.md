@@ -20,9 +20,11 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 
 ### Running
 
+To run the benchmark online, visit [this page](https://sedyh.github.io/ebiten-bunny-mark/index.html).
+
 To run the benchmark from ready binary, visit the [latest releases](https://github.com/sedyh/ebiten-bunny-mark/releases) page.
 
-To run the benchmark from sources do the following command:
+To run the benchmark from sources [install dependencies for Ebiten](https://ebiten.org/documents/install.html) and do the following command:
 
 ```
 go run github.com/sedyh/ebiten-bunny-mark@master
