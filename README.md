@@ -20,7 +20,7 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 
 ### Running
 
-To run the benchmark online, visit [this page](https://sedyh.github.io/ebiten-bunny-mark/index.html).
+To run the benchmark online, visit [this page](https://sedyh.github.io/ebiten-bunny-mark/).
 
 To run the benchmark from ready binary, visit the [latest releases](https://github.com/sedyh/ebiten-bunny-mark/releases) page.
 
