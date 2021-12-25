@@ -10,7 +10,7 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 - [Preview](#preview)
 - [Running](#running)
 - [Instructions](#instructions)
-- [Perfomance](#perfomance)
+- [Performance](#performance)
 - [Contributing](#contributing)
 
 ### Preview
@@ -40,7 +40,7 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 - To understand that the drop in performance is not a one-off - use the graphs on the left, they show TPS, FPS and the number of objects over a certain time.
 - Press the right mouse button to color the gophers, this will greatly increase the load, but keep in mind that all measurements were taken without coloring.
 
-### Perfomance
+### Performance
 
 | Software                                     | Hardware                 | Ebiten Version | Maximum number of objects at stable 60 fps |
 |----------------------------------------------|--------------------------|----------------|--------------------------------------------|
