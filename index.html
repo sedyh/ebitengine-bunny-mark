@@ -5,20 +5,18 @@
 </head>
 <style>
 	p {
-		color: white;
 		position: absolute;
 		left: 25%;
 		width: 50%;
 		height: 50%;
 		top: 25%;
-		text-align: center;
-		font-size: 32px;
 		margin: auto;
 		z-index: -100;
+		background: url(gopher-running.svg) center center no-repeat;
 	}
 </style>
 <body>
-	<p id="loading_text">LOADING...</p>
+	<p id="loading_text"></p>
 	<script src="wasm_exec.js"></script>
 	<script>
 		async function loadGame() {
@@ -26,8 +24,9 @@
 			const response = await fetch("ebiten-bunny-mark.wasm");
 			const buffer = await response.arrayBuffer();
 			const obj = await WebAssembly.instantiate(buffer, go.importObject);
-			document.getElementById("loading_text").style.visibility = "hidden";
+			await new Promise(r => setTimeout(r, 500));
 			go.run(obj.instance);
+			document.getElementById("loading_text").style.visibility = "hidden";
 		}
 		loadGame();
 	</script>
