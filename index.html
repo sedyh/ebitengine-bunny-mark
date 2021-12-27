@@ -26,7 +26,7 @@
 			const obj = await WebAssembly.instantiate(buffer, go.importObject);
 			await new Promise(r => setTimeout(r, 500));
 			go.run(obj.instance);
-			document.getElementById("loading_text").style.visibility = "hidden";
+			document.getElementById("loading_text").style.display = "none";
 		}
 		loadGame();
 	</script>
