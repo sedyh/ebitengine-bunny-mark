@@ -42,6 +42,13 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 
 ### Performance
 
+This table shows the performance of applications written in Ebiten for different platforms.
+
+It can also be useful for comparing the performance of different versions of Ebiten or different frameworks based on it.
+
+The window resolution during the test does not affect the performance in any way.
+
+
 | Software                                     | Hardware                 | Ebiten Version | Maximum number of objects at stable 60 fps |
 |----------------------------------------------|--------------------------|----------------|--------------------------------------------|
 | Native, MacOS Big Sur 11.1                   | M1 2020                  | 2.2.3          | 65400                                      |
