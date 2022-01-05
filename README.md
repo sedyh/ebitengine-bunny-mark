@@ -46,7 +46,8 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 |----------------------------------------------|--------------------------|----------------|--------------------------------------------|
 | Native, MacOS Big Sur 11.1                   | M1 2020                  | 2.2.3          | 65400                                      |
 | Native, Windows 10 Pro 19.0                  | i7-8600, RTX 2070        | 2.2.3          | 57000                                      |
-| Native, Ubuntu 20.04.3 LTS                   | i7-10750H, Quadro T1000  | 2.2.3          | 45000                                      |
+| Native, Ubuntu 21.10                         | i7-8700k, GTX 1080 TI    | 2.2.3          | 55480                                      |
+| Native, Ubuntu 20.04                         | i7-10750H, Quadro T1000  | 2.2.3          | 45000                                      |
 | Native, Windows 10 Pro 19.0                  | i7 3770, GTX 1050 TI     | 2.2.3          | 39000                                      |
 | Native, Linux Mint 20.2 Cinnamon             | Ryzen 5 3600, RX 5700 XT | 2.2.3          | 36000                                      |
 | Wasm, Windows 10 Pro 19.0, Chrome 96.0       | i7-8600, RTX 2070        | 2.2.3          | 10000                                      |
@@ -61,6 +62,6 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 
 ### Contributing
 
-To add, remove, or change things on the perfomance table: send a message in [this](https://github.com/sedyh/ebiten-bunny-mark/issues/2) issue.
+To add, remove, or change things on the performance table: send a message in [this](https://github.com/sedyh/ebiten-bunny-mark/issues/2) issue.
 
 To add new functionality or fix something: submit a pull request.
