@@ -44,8 +44,6 @@ go run github.com/sedyh/ebiten-bunny-mark@master
 
 This table shows the performance of applications written in Ebiten for different platforms.
 
-It can also be useful for comparing the performance of different versions of Ebiten or different frameworks based on it.
-
 The window resolution during the test does not affect the performance in any way.
 
 
