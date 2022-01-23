@@ -1,4 +1,4 @@
-# <img align="right" src="https://user-images.githubusercontent.com/19890545/147268423-d643c63a-96d2-40d1-9791-6cd842dc5647.png" alt="ebiten-bunny-mark" title="ebiten-bunny-mark" /> Ebiten Bunny Mark
+# <img align="right" width="100px" src="https://user-images.githubusercontent.com/19890545/147268423-d643c63a-96d2-40d1-9791-6cd842dc5647.png" alt="ebiten-bunny-mark" title="ebiten-bunny-mark" /> Ebiten Bunny Mark
 
 This is an implementation of the popular graphics benchmark written on [Ebiten](https://github.com/hajimehoshi/ebiten).
 
@@ -15,8 +15,7 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 
 ### Preview
 
-<img src="https://user-images.githubusercontent.com/19890545/147268942-4c939aee-1c30-42d8-b792-39021fd62568.gif">
-<img src="https://user-images.githubusercontent.com/19890545/147268946-e6ff7293-9715-472c-aba1-5dd04690d79c.gif">
+<img src="https://user-images.githubusercontent.com/19890545/150689855-10124f7a-9241-4379-af17-d892f34ad504.gif">
 
 ### Running
 
