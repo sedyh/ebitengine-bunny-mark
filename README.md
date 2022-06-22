@@ -1,6 +1,6 @@
-# <img align="right" width="100px" src="https://user-images.githubusercontent.com/19890545/147268423-d643c63a-96d2-40d1-9791-6cd842dc5647.png" alt="ebiten-bunny-mark" title="ebiten-bunny-mark" /> Ebiten Bunny Mark
+# <img align="right" width="100px" src="https://user-images.githubusercontent.com/19890545/147268423-d643c63a-96d2-40d1-9791-6cd842dc5647.png" alt="ebitengine-bunny-mark" title="ebitengine-bunny-mark" /> Ebitengine Bunny Mark
 
-This is an implementation of the popular graphics benchmark written on [Ebiten](https://github.com/hajimehoshi/ebiten).
+This is an implementation of the popular graphics benchmark written on [Ebitengine](https://github.com/hajimehoshi/ebiten).
 
 The initial benchmark was created by [Ian Lobb (code)](http://blog.iainlobb.com/2010/11/display-list-vs-blitting-results.html)
 and [Amanda Lobb (art)](http://amandalobb.com/)
@@ -19,9 +19,9 @@ and [Amanda Lobb (art)](http://amandalobb.com/)
 
 ### Running
 
-To run the benchmark online, visit [this page](https://sedyh.github.io/ebiten-bunny-mark/).
+To run the benchmark online, visit [this page](https://sedyh.github.io/ebitengine-bunny-mark/).
 
-To run the benchmark from ready binary, visit the [latest releases](https://github.com/sedyh/ebiten-bunny-mark/releases) page.
+To run the benchmark from ready binary, visit the [latest releases](https://github.com/sedyh/ebitengine-bunny-mark/releases) page.
 
 To run the benchmark from sources [install dependencies for Ebiten](https://ebiten.org/documents/install.html) and do the following command:
 
@@ -46,7 +46,7 @@ This table shows the performance of applications written in Ebiten for different
 The window resolution during the test does not affect the performance in any way.
 
 
-| Software                                     | Hardware                 | Ebiten Version | Maximum number of objects at stable 60 fps |
+| Software                                     | Hardware                 | Ebitengine     | Maximum number of objects at stable 60 fps |
 |----------------------------------------------|--------------------------|----------------|--------------------------------------------|
 | Native, MacOS Big Sur 11.1                   | M1 2020                  | 2.2.3          | 65400                                      |
 | Native, Windows 10 Pro 19.0                  | i7-8600, RTX 2070        | 2.2.3          | 57000                                      |
